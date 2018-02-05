@@ -50,11 +50,11 @@ Now how would you find the owner of the team with an id of 4?
 
 |--------|    |-----------------|    |--------|
 
-|   id   |    |   student_id    |    |   id   |
+|---id---|    |---student_id ---|    |---id---|
 
-              |-----------------|
+|--------|    |-----------------|    |--------|
               
-              |   teacher_id   |
+              |---teacher_id----|
 
 
 
@@ -101,8 +101,6 @@ Now how would you find the owner of the team with an id of 4?
 
 8. Describe and diagram the relationship between museums and original_paintings.
 * one to many; museums have many original_paintings and an original_painting
-[original_paintings]  _--> [museum]
-[id]                /      [id]
-[museum_id]--------/
+
 9. What could you see in your code that would make you think you might want to create a partial?
 * repeated code / repeated html
