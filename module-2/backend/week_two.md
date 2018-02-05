@@ -48,11 +48,9 @@ Now how would you find the owner of the team with an id of 4?
 
 |students|    |students_teachers|    |teachers|
 
-|--------|    |-----------------|    |--------|
 
 |---id---|    |---student_id ---|    |---id---|
 
-|--------|    |-----------------|    |--------|
               
               |---teacher_id----|
 
