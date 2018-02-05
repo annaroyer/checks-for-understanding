@@ -45,9 +45,12 @@ Now how would you find the owner of the team with an id of 4?
 * Team.find(4).owner
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
-* [students]        [student_teachers]            [teachers]
-  [id]------------->[student_id]                  [id]
-                    [teacher_id]<-________________/
+[students][id]-------\
+                      \
+[student_teachers][student_id][teacher_id]
+                                   /
+[teachers][id]--------------------/                  
+     
   
 6. Define foreign key, primary key, and schema.
 * a foreign key is an attribute on a table that refers to an entity on another table in the database. The foreign key is the unique primary key of the entity on the other table
