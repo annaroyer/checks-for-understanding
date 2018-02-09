@@ -34,7 +34,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 
 8. What are strong params and why are they necessary?
 * strong params are params for a resource that you specifically permit your public methods access to
-* They are necessary because they keep your application, and specifically, your database secure by only allowing users to send the data that you expect
+* They are necessary because rails doesn't allow your public methods access to parameters in post/put requests (unless you make them strong parameters) in order to  keep your application, and specifically, your database secure by only allowing users to send the data that you expect. 
 
 9. What role does `form_for` play in helping us create our forms?
 * `form_for` takes an argument, an instance of an object, and determines which resource the form action is on. It determines the method for the form base on whether that instance has been saved (update) or not (create). It then takes a block that defines the labels and fields for the form, and generates a string of html that will display that form.
