@@ -55,3 +55,34 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 ```
 12. Why do we want to validate our models?
 * We validate our models so we can control what kind of data gets entered into our database. It makes sure that columns you require for records are required, that columns you require to be unique are unique, and that columns that you require to be a certain format or datatype are in that format
+
+13. What are the steps of the DNS lookup?
+* The browser and the operating system first look in their cache to see if the name is stored there. If it isn't there, the resolving name server takes the IP Address and goes to the Root Name Server. The root name server directs the resolving name server to the top level domain server, who directs the resolving name server to the correct authoritative name server. The authoritative name server gives the resolving name server the correct domain name. The resolving name server stores this in cache and returns it to the operating system, which gives it to the browser.
+
+### Review Questions
+14. How would you call the method prance from within the method move on a Horse instance?
+* self.prance
+
+15. Given the following hash:
+furniture = {table: {height: 3, color: "red"}, purchased: true}
+What is the different between how you would return true vs returning 3?
+
+* return 3: `furniture[:table][:height]`
+* return true: `furniture[:table][:height]`
+
+16. What is inheritance?
+* inheritance is where a class inherits the methods defined in a different class
+
+Self Assessment:
+Choose One:
+
+**I was able to answer every question without relying on outside resources**
+I was able to answer most questions independently, but utilized outside resources for a few
+I was able to answer a few questions independently, but relied heavily on outside resources
+Choose One:
+
+I feel confident about the content presented this week
+I feel comfortable with the content presented this week
+**I feel overwhelmed by the content presented this week**
+I feel quite lost by the content presented this week
+
