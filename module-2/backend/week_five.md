@@ -114,10 +114,10 @@ given.gsub(/[^0-9]/, ' ').strip.split(' ').join('.')
 Choose One:
 * I was able to answer every question without relying on outside resources
 * I was able to answer most questions independently, but utilized outside resources for a few
-* **I was able to answer a few questions independently, but relied heavily on outside resources 
+* **I was able to answer a few questions independently, but relied heavily on outside resources** 
 
 Choose One:
 * I feel confident about the content presented this week
-* **I feel comfortable with the content presented this week
+* **I feel comfortable with the content presented this week**
 * I feel overwhelmed by the content presented this week
 * I feel quite lost by the content presented this week
