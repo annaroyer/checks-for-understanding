@@ -58,9 +58,9 @@ end
 
 8. What are the top four accessibility issues that we as developers should be aware of?
 1) visual
-2) auditory
-3) cognitive
-4) physical
+2) mobility
+3) cognition
+4) auditory? language? -> don't know the 4th
 
 9. `before_save` is an example of a what? Where in our Rails application would we find a `before_save`?
 * callback
@@ -71,9 +71,10 @@ end
 ```ruby 
 User.create(name: "Happy", active: true)
 ```
-scope -> 
-11. What is the difference between a scope and a class method?
+scope :active -> { where(active: true) }
 
+11. What is the difference between a scope and a class method?
+Nothing
 
 ### Review Questions:  
 12. Given the following hash:  
@@ -83,14 +84,30 @@ scope ->
 ```
 
   12a. How would you add item with id of 48 with a quantity of 4?  
-  ```
-  cart[id.to_s]
-  12b. How would you increase the quantity of item 29?  
-  12c. How would you find out how many items your user is thinking about purchasing?   
   
-13. What is polymorphism? How does it relate to duck-typing? What are two ways you use this in everyday Rails applications?  
-14. How would you clean the string "(630) 854-5483" to "630.854.5483"?  
+  ```
+  given.default = 0
+  given[:cart][item.id.to_s] += 4
+  ```
+  
+  12b. How would you increase the quantity of item 29?  
+  
+  ```
+  given[:cart][item.id.to_s] += 1
+  ```
+  12c. How would you find out how many items your user is thinking about purchasing?   
+  ```
+  given.values.sum
+  ```
+  
+13. What is polymorphism? How does it relate to duck-typing? What are two ways you use this in everyday Rails applications?  * wikipedia says it is the provision of a single interface to entitities of different types, which is a good, general definition for what I understand polymorphism to be.
+* It relates to duck-typing, because a single method can apply to different data types and different types of objects. For example, the method + can apply to integers, stings and arrays. Duck typing would be used to specify the data types that method was being used with
+* model specs vs. feature specs 
+* erb tags
 
+14. How would you clean the string "(630) 854-5483" to "630.854.5483"?  
+```
+given.gsub(' ', '.').gsub('-', '.').gsub(//[[:
 
 ### Self Assessment:
 Choose One:
